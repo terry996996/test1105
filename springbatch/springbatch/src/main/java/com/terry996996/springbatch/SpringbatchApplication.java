@@ -1,0 +1,29 @@
+package com.terry996996.springbatch;
+
+import org.springframework.batch.core.Job;
+import org.springframework.batch.core.JobParameters;
+import org.springframework.batch.core.launch.JobLauncher;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+public class SpringbatchApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringbatchApplication.class, args);
+	}
+	
+//	@Bean
+//	public ApplicationRunner run(JobLauncher jobLauncher, Job firstJob) {
+//	    return new ApplicationRunner() {
+//	        @Override
+//	        public void run(ApplicationArguments args) throws Exception {
+//	            jobLauncher.run(firstJob, new JobParameters());
+//	        }
+//	    };
+//	}
+
+}

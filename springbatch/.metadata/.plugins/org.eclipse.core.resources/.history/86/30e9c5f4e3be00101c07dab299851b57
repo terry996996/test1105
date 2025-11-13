@@ -1,0 +1,23 @@
+spring.application.name=springbatch
+
+
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.datasource.url=jdbc:sqlserver://localhost:1433;database=springbatch;encrypt=false;useUnicode=true;characterEncoding=UTF-8;
+spring.datasource.username=sa
+spring.datasource.password=Terry890424$
+# 指定執行哪一個Job(ps:如果不指定，在專案有多個Job Bean之下，自動配置會報錯，不知報要執行哪一個Job Bean，除非用手動配置一次執行多個Job Bean)
+spring.batch.job.name=jobDemo1
+# 讓 Spring Boot 根據資料庫類型自動初始化 Spring Batch Schema
+spring.batch.jdbc.initialize-schema=always
+
+#spring.sql.init.schema-locations=classpath:org/springframework/batch/core/schema-mssql.sql
+
+#spring.datasource.url=jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+#spring.datasource.driver-class-name=org.h2.Driver
+#
+#spring.sql.init.mode=always
+#spring.sql.init.schema-locations=classpath:org/springframework/batch/core/schema-h2.sql
+
+#spring.batch.job.enabled=true
+#spring.batch.job.name=firstJob
+#spring.main.web-application-type=none

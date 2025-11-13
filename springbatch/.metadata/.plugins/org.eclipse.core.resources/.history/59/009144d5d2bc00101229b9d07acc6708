@@ -1,0 +1,27 @@
+package com.terry996996.springbatch.config;
+
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
+import org.springframework.batch.core.repository.JobRepository;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.transaction.PlatformTransactionManager;
+
+@Configuration
+@EnableBatchProcessing
+public class JobConfiguration {
+
+	private final JobRepository jobRepository;
+    private final PlatformTransactionManager transactionManager;
+    
+    public JobConfiguration(JobRepository jobRepository, PlatformTransactionManager transactionManager) {
+        this.jobRepository = jobRepository;
+        this.transactionManager = transactionManager;
+    }
+	
+//	// 注入創建任務物件的工廠物件
+//	@Autowired
+//	private JobBuilderFactory jobBuilderFactory;
+//	
+//	// 注入創建step物件的工廠物件
+//	@Autowired
+//	private StepBuilderFactory stepBuilderFactory;
+}

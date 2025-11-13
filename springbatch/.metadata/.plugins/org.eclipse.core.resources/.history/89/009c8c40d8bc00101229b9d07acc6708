@@ -1,0 +1,11 @@
+spring.application.name=springbatch
+
+spring.datasource.url=jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+spring.datasource.driver-class-name=org.h2.Driver
+
+spring.sql.init.mode=always
+spring.sql.init.schema-locations=classpath:org/springframework/batch/core/schema-h2.sql
+
+#spring.batch.job.enabled=true
+#spring.batch.job.name=firstJob
+#spring.main.web-application-type=none

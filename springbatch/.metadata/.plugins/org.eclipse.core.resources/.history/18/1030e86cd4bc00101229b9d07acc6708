@@ -1,0 +1,6 @@
+spring.application.name=springbatch
+
+spring.batch.job.enabled=true
+
+spring.main.web-application-type=none
+spring.main.banner-mode=off

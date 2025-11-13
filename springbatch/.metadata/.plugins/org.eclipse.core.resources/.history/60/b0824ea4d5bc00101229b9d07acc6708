@@ -1,0 +1,10 @@
+spring.application.name=springbatch
+
+
+spring.batch.job.enabled=true 
+
+
+spring.batch.job.names=firstJob 
+
+
+spring.batch.job.parameters-are-unique=true 

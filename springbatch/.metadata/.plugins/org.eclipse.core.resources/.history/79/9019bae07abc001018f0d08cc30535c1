@@ -1,0 +1,8 @@
+package com.terry996996.springbatch.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class JobConfiguration {
+
+}
